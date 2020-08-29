@@ -1,6 +1,6 @@
 import React from 'react'
 import { FlatList, TouchableHighlight } from 'react-native-gesture-handler'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 const availableZipItems = [
@@ -27,11 +27,18 @@ const ZipItem = ({place, code, navigation}) => (
 export default function ZipCodeScreen(){
     const navigation = useNavigation()
     return(
-        <FlatList
+        
+            
+            <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
+            <FlatList
             data = {availableZipItems}
             keyExtractor = {item => item.code}
             renderItem = {({item}) => <ZipItem{...item} navigation={navigation}/>}
             />
+            
+                </ImageBackground>
+            
+            
     )
 }
 
@@ -46,5 +53,13 @@ const styles = StyleSheet.create({
     },
     zipCode: {
         flex: 1,
-    }
+    },
+    backdrop: {
+        
+     
+        width: '100%',
+        height: '100%'
+   }
+    
 })
+
