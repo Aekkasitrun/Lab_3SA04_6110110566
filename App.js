@@ -10,7 +10,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Text onPress={doIt}>Hello</Text>
+      <Text onPress={doIt}>Hello World</Text>
       <StatusBar style="auto" />
     </View>
   );
