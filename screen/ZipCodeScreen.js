@@ -4,11 +4,13 @@ import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 const availableZipItems = [
-    { place: 'Hatyai', code: '90110' },
-    { place: 'Trang', code: '92000' },
-    { place: 'Chiangmai', code: '50000' },
-    { place: 'Khonkaen', code: '40000' },
-    { place: 'Chonburi', code: '20000' },
+    { place: 'สงขลา', code: '90110' },
+    { place: 'ตรัง', code: '92000' },
+    { place: 'เชียงใหม่', code: '50000' },
+    { place: 'ขอนแก่น', code: '40000' },
+    { place: 'ชลบุรี', code: '20000' },
+    { place: 'พัทลุง', code: '93000' },
+
    ]
    
 
