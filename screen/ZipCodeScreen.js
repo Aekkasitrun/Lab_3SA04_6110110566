@@ -10,6 +10,7 @@ const availableZipItems = [
     { place: 'ขอนแก่น', code: '40000' },
     { place: 'ชลบุรี', code: '20000' },
     { place: 'พัทลุง', code: '93000' },
+    { place: 'นครศรีธรรมราช', code: '80000' },
 
    ]
    
